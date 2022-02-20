@@ -1,0 +1,27 @@
+A Checklist is a catalog of items/tasks that are recorded for tracking. This list could be either ordered in a sequence or could be haphazard.Thus, there is no concrete structure of checklists for software testing, but usually they  contain a list of blocks, sections, pages, other elements that should be tested and marked with the one of following statuses -  "Passed/Ok"/"Failed"/"Blocked"/"skipped"/"Not run" and so on.
+
+The example of registration form's checklist is below:
+Verify that the Registration form contains Username, First Name, Last Name, Password, Confirm Password, Email Id, Phone number, Date of birth, Gender, Location, Terms of use, Submit, Login (If you already have an account)
+Verify that tab functionality is working properly or not
+Verify that Enter/Tab key works as a substitute for the Submit button
+Verify that all the fields such as Username, First Name, Last Name, Password and other fields have a valid placeholder
+Verify that the labels float upward when the text field is in focus or filled (In case of floating label)
+Verify that all the required/mandatory fields are marked with * against the field
+Verify that clicking on submit button after entering all the mandatory fields, submits the data to the server
+Verify that system generates a validation message when clicking on submit button without filling all the mandatory fields.
+Verify that entering blank spaces on mandatory fields lead to validation error
+Verify that clicking on submit button by leaving optional fields, submits the data to the server without any validation error
+Verify that case sensitivity of Username (usually Username field should not follow case sensitivity – ‘rajkumar’ & ‘RAJKUMAR’ acts same)
+Verify that system generates a validation message when entering existing username
+Verify that the character limit in all the fields (mainly username and password) based on business requirement
+Verify that the username validation as per business requirement (in some application, username should not allow numeric and special characters)
+Verify that the validation of all the fields are as per business requirement
+Verify that the date of birth field should not allow the dates greater than current date (some applications have age limit of 18 in that case you have to validate whether the age is greater than or equal to 18 or not)
+Verify that the validation of email field by entering incorrect email id
+Verify that the validation of numeric fields by entering alphabets and characters
+Verify that leading and trailing spaces are trimmed after clicking on submit button
+Verify that the “terms and conditions” checkbox is unselected by default (depends on business logic, it may be selected or unselected)
+Verify that the validation message is displayed when clicking on submit button without selecting “terms and conditions” checkbox
+Verify that the password is in encrypted form when entered
+Verify whether the password and confirm password are same or not
+
