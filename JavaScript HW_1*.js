@@ -51,5 +51,30 @@ checkAge_numbers(61);
 checkAge_numbers('letters');
 
 //3**:Преобразовать 2* таким образом, чтобы значение '2' (строка в которой лежит ТОЛЬКО ЦИФРА) пропускалось, преобразовываясь в number
+const checkAge_numbers_2 = function (age_1) {
+    age_1 = Number(age_1)
+        if(!isNaN(age_1)) {
+    if (age_1 < age_2) {
+        console.log("You don’t have access cause your age is "+ age_1+ " It’s less then "+ age_2)
+    }
+    else if (age_1 >=  age_2 && age_1 < age_3) {
+        console.log("Welcome  !");
+    }
+    else if (age_1 > age_3) {
+        console.log("Keep calm and look Culture channel");
+    }
+    else{
+        console.log("Technical work");}
+    } else {console.log ('Please input numeric characters only')}
+} 
+
+checkAge_numbers_2(17);
+checkAge_numbers_2(18);
+checkAge_numbers_2(61);
+checkAge_numbers_2('letters');
+checkAge_numbers_2('17');
+checkAge_numbers_2('18bcd');
 
 //4***Преобразовать задание 3* таким образом, чтобы возраст вводится используя функцию prompt в привязанной верстке
+
+
